@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Finder</h1>
+            <p>Find delicious meals from around the world</p>
+        </header>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="searchQuery" placeholder="Search for a recipe..." />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading-spinner" style="display: none;">Loading...</div>
+
+        <!-- Trending Recipes -->
+        <section>
+            <h2>Trending Recipes</h2>
+            <div id="trendingResults" class="recipe-results"></div>
+        </section>
+
+        <!-- Most Searched Recipes -->
+        <section>
+            <h2>Most Searched Recipes</h2>
+            <div id="mostSearchedResults" class="recipe-results"></div>
+        </section>
+
+        <!-- Recipe Search Results -->
+        <section>
+            <h2>Search Results</h2>
+            <div id="recipeResults" class="recipe-results"></div>
+        </section>
+
+        <footer>
+            <p>Powered by <a href="https://www.themealdb.com/">TheMealDB API</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
